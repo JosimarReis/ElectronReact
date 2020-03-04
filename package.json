@@ -1,0 +1,53 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "app/main.js",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "build": "gulp build",
+    "start": "gulp",
+    "test": "gulp test",
+    "release": "gulp release"
+  },
+  "repository": "https://github.com/JosimarReis/ElectronReact",
+  "keywords": [
+    "Electron",
+    "start"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/preset-react": "^7.8.3",
+    "babel-jest": "^25.1.0",
+    "electron": "^8.0.3",
+    "electron-builder": "^22.3.6",
+    "electron-react-devtools": "^0.5.3",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^4.0.2",
+    "jest": "^25.1.0",
+    "react-test-renderer": "^16.13.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "electron-is-dev": "^1.1.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-router-dom": "^5.1.2"
+  },
+  "build": {
+    "appId": "com.github.ElectronReact",
+    "files": [
+      "app/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "publish": null
+  }
+}
